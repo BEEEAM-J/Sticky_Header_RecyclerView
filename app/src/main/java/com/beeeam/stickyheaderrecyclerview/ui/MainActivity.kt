@@ -38,10 +38,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun getSectionCallback(): SectionCallBack {
         return object : SectionCallBack {
-            override fun isHeader(position: Int): Boolean {
-                return adapter.isHeader(position)
-            }
-
             override fun getHeaderView(list: RecyclerView, position: Int): View? {
                 return adapter.getHeaderView(list, position)
             }
